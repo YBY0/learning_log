@@ -148,19 +148,14 @@ if os.getcwd() =='/app':
     # support all host header
     ALLOWED_HOSTS = ['*']
 
-
-    # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
     # Static files (CSS, JavaScript, Images)
     # https://docs.djangoproject.com/en/1.9/howto/static-files/
-
-    # This line tells Django to look for static files in a folder named static inside each of our apps.
+    STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
     STATIC_URL = '/static/'
 
-    # With this configuration, Django will look for static files in a folder named static inside each app and into the neurorehabilitation/static folder
+    # Extra places for collectstatic to find static files.
     STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, "static"),
+        os.path.join(PROJECT_ROOT, 'static'),
     )
