@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-
+from learning_log import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('learning_logs.urls',  namespace='learning_logs')),
     url(r'^users/', include('users.urls', namespace='users'))
 ]
+
