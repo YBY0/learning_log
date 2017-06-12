@@ -150,7 +150,7 @@ if os.getcwd() =='/app':
 
     #static setting
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    STATIX_ROOT = 'staticfiles'
+    STATIC_ROOT = 'staticfiles'
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, 'static'),
     )
