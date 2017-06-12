@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e760af9a-96a7-46a8-a577-cb1f3b32d991" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learning_log/settings.py" afterPath="$PROJECT_DIR$/learning_log/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learning_log/urls.py" afterPath="$PROJECT_DIR$/learning_log/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learning_log/wsgi.py" afterPath="$PROJECT_DIR$/learning_log/wsgi.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +37,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learning_log/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
+            <state relative-caret-position="610">
               <caret line="154" column="41" lean-forward="true" selection-start-line="154" selection-start-column="41" selection-end-line="154" selection-end-column="41" />
               <folding />
             </state>
@@ -844,7 +842,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learning_log/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
+        <state relative-caret-position="610">
           <caret line="154" column="41" lean-forward="true" selection-start-line="154" selection-start-column="41" selection-end-line="154" selection-end-column="41" />
           <folding />
         </state>
