@@ -25,7 +25,7 @@ SECRET_KEY = '^oe^n!pry0oqv2(4#h2yt!67n13cx(!stj)53^e&@au9xqordb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -121,10 +121,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
 
 # my settings
 LOGIN_URL = '/users/login/'
@@ -137,20 +134,24 @@ BOOTSRAP3 = {
 
 # Heroku settings
 
+
 import dj_database_url
-DATABASES = {
-    'default': dj_database_url.config(default='postgres://localhost')
-}
+# Update database configuration with $DATABASE_URL.
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 # let request.is_secure() admit X-Forwarded-Proto header
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-# support all host header
+# Allow all host headers
 ALLOWED_HOSTS = ['*']
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.11/howto/static-files/
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
