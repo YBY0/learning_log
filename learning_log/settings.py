@@ -27,7 +27,7 @@ SECRET_KEY = '^oe^n!pry0oqv2(4#h2yt!67n13cx(!stj)53^e&@au9xqordb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','learnhappy.herokuapp.com']
 
 
 # Application definition
@@ -156,5 +156,5 @@ STATICFILES_DIRS = (
 
 # Heroku setting
 if os.getcwd() == '/app':
-    ALLOWED_HOSTS = ['learning-log.herokuapp.com', ]
+    ALLOWED_HOSTS = ['learnhappy.herokuapp.com', ]
     DEBUG = False
