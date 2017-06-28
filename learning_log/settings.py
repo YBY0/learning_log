@@ -22,8 +22,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '^oe^n!pry0oqv2(4#h2yt!67n13cx(!stj)53^e&@au9xqordb'
 
+# only let Heroku use this project
+ALLOWED_HOSTS = ['happylearn.herokuapp.com']
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 
